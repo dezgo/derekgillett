@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ settings.name }} — Developer</title>
+    <meta name="description" content="{{ settings.meta_description }}">
+    <meta name="author" content="{{ settings.name }}">
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://derekgillett.com">
+    <meta property="og:title" content="{{ settings.name }} — Developer">
+    <meta property="og:description" content="{{ settings.meta_description }}">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ settings.name }} — Developer">
+    <meta name="twitter:description" content="{{ settings.meta_description }}">
+
+    <link rel="canonical" href="https://derekgillett.com">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a26;
+            --border-card: #1e1e2e;
+            --text-primary: #e8e8ed;
+            --text-secondary: #8888a0;
+            --text-muted: #55556a;
+            --accent-blue: #4a7cff;
+            --accent-purple: #8b5cf6;
+            --accent-teal: #14b8a6;
+            --accent-orange: #f59e0b;
+            --accent-pink: #ec4899;
+            --accent-green: #22c55e;
+            --gradient-hero: linear-gradient(135deg, #4a7cff 0%, #8b5cf6 50%, #ec4899 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 30%, rgba(74, 124, 255, 0.04) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 60%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+                        radial-gradient(circle at 50% 80%, rgba(236, 72, 153, 0.02) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero {
+            padding: 100px 0 80px;
+            text-align: center;
+        }
+
+        .hero-name {
+            font-size: 3.2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .hero-tagline {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 540px;
+            margin: 0 auto 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease 0.15s forwards;
+        }
+
+        .hero-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease 0.3s forwards;
+        }
+
+        .hero-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border-card);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.25s ease;
+        }
+
+        .hero-link:hover {
+            border-color: var(--accent-blue);
+            color: var(--text-primary);
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+        }
+
+        .hero-link svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .projects {
+            padding: 0 0 100px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .project-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        a.project-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .project-card:hover {
+            border-color: var(--border-card);
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        a.project-card-link .project-card:hover {
+            cursor: pointer;
+            border-color: var(--accent-blue);
+        }
+
+        .project-card.visible:hover {
+            transform: translateY(-4px);
+        }
+
+        .project-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+        }
+
+        .project-card-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .project-card-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .project-tag {
+            font-size: 0.72rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-muted);
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-card);
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                padding: 60px 0 50px;
+            }
+            .hero-name {
+                font-size: 2.2rem;
+            }
+            .hero-tagline {
+                font-size: 1.05rem;
+            }
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <div class="container">
+        <section class="hero">
+            <h1 class="hero-name">{{ settings.name }}</h1>
+            <p class="hero-tagline">{{ settings.tagline }}</p>
+            <div class="hero-links">
+                {% for link in links %}
+                <a href="{{ link.url }}" class="hero-link" {% if not link.url.startswith('mailto:') %}target="_blank" rel="noopener"{% endif %}>
+                    {{ link.icon_svg | safe }}
+                    {{ link.label }}
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                {% for project in projects %}
+                {% if project.url %}
+                <a href="{{ project.url }}" class="project-card-link" target="_blank" rel="noopener">
+                {% endif %}
+                <div class="project-card">
+                    <div class="project-icon" style="background: {{ project.icon_bg_color }}; color: {{ project.icon_text_color }};">
+                        {{ project.icon_svg | safe }}
+                    </div>
+                    <h3 class="project-card-title">{{ project.title }}</h3>
+                    <p class="project-card-desc">{{ project.description }}</p>
+                    <div class="project-tags">
+                        {% for tag in project.tags.split(',') %}
+                        {% if tag.strip() %}
+                        <span class="project-tag">{{ tag.strip() }}</span>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% if project.url %}
+                </a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            {{ settings.footer_text }}
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    const cards = document.querySelectorAll('.project-card');
+                    const cardIndex = Array.from(cards).indexOf(entry.target);
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, cardIndex * 100);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

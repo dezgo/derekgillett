@@ -1,0 +1,14 @@
+[Unit]
+Description=Derek Gillett Personal Site
+After=network.target
+
+[Service]
+User=derek
+Group=derek
+WorkingDirectory=/var/www/derekgillett
+EnvironmentFile=/var/www/derekgillett/.env
+ExecStart=/var/www/derekgillett/venv/bin/gunicorn -w 2 --bind unix:/var/www/derekgillett/derekgillett.sock --error-logfile /var/www/derekgillett/gunicorn-error.log --capture-output --log-level info app:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
