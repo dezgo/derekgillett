@@ -1,0 +1,126 @@
+settings:
+  name: "Derek Gillett"
+  tagline: "Developer building web apps, automation tools, and AI-powered solutions. Based in Canberra, Australia."
+  footer_text: "Derek Gillett — 2026"
+  meta_description: "Derek Gillett — developer building web apps, automation tools, and AI-powered solutions. Based in Canberra, Australia."
+
+social_links:
+  - label: "GitHub"
+    url: "https://github.com/dezgo"
+    icon_svg: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>'
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/derekgg"
+    icon_svg: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>'
+  - label: "Email"
+    url: "mailto:hello@derekgillett.com"
+    icon_svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>'
+  - label: "Instagram"
+    url: "https://instagram.com/derekgillett.au"
+    icon_svg: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>'
+
+projects:
+  - title: "Rinq"
+    description: "Cloud phone system powered by Twilio with call forwarding, IVR call flows, queues, voicemail, call recordings, and staff extensions. Multi-tenant support with customisable call routing and schedules."
+    url: "https://rinq.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>'
+    icon_bg_color: "rgba(231, 76, 60, 0.12)"
+    icon_text_color: "#e74c3c"
+    tags: "Flask,Twilio,Google OAuth,SIP"
+  - title: "MealOps"
+    description: "Meal planning and shopping list app with an ingredient library, merged shopping lists grouped by category, pantry tracking with expiry alerts, and AI-powered meal editing."
+    url: "https://mealops.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/><circle cx="7" cy="6" r="1" fill="currentColor"/><circle cx="13" cy="12" r="1" fill="currentColor"/><circle cx="9" cy="18" r="1" fill="currentColor"/></svg>'
+    icon_bg_color: "rgba(74, 124, 255, 0.12)"
+    icon_text_color: "var(--accent-blue)"
+    tags: "Flask,SQLAlchemy,Stripe,AI"
+  - title: "LendifyMe"
+    description: "Personal loan tracker that automatically reconciles repayments by matching bank transactions using a confidence-based algorithm. Supports Up Bank API and CSV imports."
+    url: "https://lendifyme.com"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>'
+    icon_bg_color: "rgba(34, 197, 94, 0.12)"
+    icon_text_color: "var(--accent-green)"
+    tags: "Flask,WebSockets,Bank APIs,Stripe"
+  - title: "InvoicingZen"
+    description: "Multi-tenant invoicing platform with magic link auth, PDF generation, email delivery, and Stripe subscriptions. Full rewrite from a legacy Laravel codebase."
+    url: "https://invoicingzen.com"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>'
+    icon_bg_color: "rgba(139, 92, 246, 0.12)"
+    icon_text_color: "var(--accent-purple)"
+    tags: "Flask,WeasyPrint,Stripe,Multi-tenant"
+  - title: "Kardd"
+    description: "Privacy-first digital contact card with QR code sharing. Client-side AES-256 encryption, magic link auth, and full PWA support for seamless offline use."
+    url: "https://kardd.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><circle cx="9" cy="10" r="2.5"/><path d="M5 17c0-2 2-3 4-3s4 1 4 3"/><line x1="16" y1="8" x2="20" y2="8"/><line x1="16" y1="12" x2="20" y2="12"/></svg>'
+    icon_bg_color: "rgba(6, 182, 212, 0.12)"
+    icon_text_color: "#06b6d4"
+    tags: "Flask,PWA,E2E Encryption,QR Codes"
+  - title: "SiteSign"
+    description: "Construction site sign-in system with QR codes, safety documents, inductions, emergency SMS alerts, and hours reporting. Stripe billing with free, standard, and pro tiers."
+    url: "https://sitesign.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>'
+    icon_bg_color: "rgba(245, 158, 11, 0.12)"
+    icon_text_color: "var(--accent-orange)"
+    tags: "Flask,Stripe,QR Codes,PWA"
+  - title: "HavList"
+    description: "Personal inventory tracker with AI-powered photo analysis that auto-fills item details from photos. Multi-photo uploads, category and location filtering, and full PWA support."
+    url: "https://havlist.appfoundry.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>'
+    icon_bg_color: "rgba(34, 197, 94, 0.12)"
+    icon_text_color: "var(--accent-green)"
+    tags: "Flask,Claude API,PWA,SQLite"
+  - title: "SweepMail"
+    description: "Gmail inbox cleaner that connects via OAuth, categorises emails by type, and lets you bulk-delete by category or sender. Inbox analytics with storage and junk stats."
+    url: "https://sweepmail.appfoundry.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>'
+    icon_bg_color: "rgba(239, 68, 68, 0.12)"
+    icon_text_color: "#ef4444"
+    tags: "Flask,Gmail API,OAuth2,Google APIs"
+  - title: "MenuVi"
+    description: "Multi-restaurant digital menu platform. Customers scan a QR code at their table, browse the menu on their phone, and shortlist items to show the waiter."
+    url: "https://menuvi.appfoundry.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>'
+    icon_bg_color: "rgba(139, 92, 246, 0.12)"
+    icon_text_color: "var(--accent-purple)"
+    tags: "Flask,Multi-tenant,QR Codes,Mobile-first"
+  - title: "DraftFlow"
+    description: "Social media content management tool with AI-assisted copy generation, hashtag groups, prompt templates, and copy-ready export blocks for streamlined publishing."
+    url: "https://draftflow.appfoundry.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>'
+    icon_bg_color: "rgba(236, 72, 153, 0.12)"
+    icon_text_color: "var(--accent-pink)"
+    tags: "Flask,SQLAlchemy,AI,Bootstrap"
+  - title: "Tradintel"
+    description: "Automated multi-strategy crypto trading system running mean reversion, breakout, and trend-following strategies with dynamic rebalancing and genetic algorithm optimisation."
+    url: null
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>'
+    icon_bg_color: "rgba(251, 191, 36, 0.12)"
+    icon_text_color: "#fbbf24"
+    tags: "Flask,CCXT,Gate.io,Backtesting"
+  - title: "BringAPlate"
+    description: "Collaborative event catering organiser where guests can browse available dishes and claim what they'll bring. Role-based access for family, admins, and viewers."
+    url: "https://xmas.bringaplate.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 00-4 4c0 2 2 3 2 5H8l-1 3h10l-1-3h-2c0-2 2-3 2-5a4 4 0 00-4-4z"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>'
+    icon_bg_color: "rgba(239, 68, 68, 0.12)"
+    icon_text_color: "#ef4444"
+    tags: "Flask,SQLite,Bootstrap,bringaplate.cc"
+  - title: "RegoReminder"
+    description: "Vehicle registration tracker for the ACT that scrapes government records for real-time status and sends automatic email reminders when rego is approaching expiry."
+    url: "https://regoreminder.appfoundry.cc"
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>'
+    icon_bg_color: "rgba(59, 130, 246, 0.12)"
+    icon_text_color: "#3b82f6"
+    tags: "Flask,Playwright,APScheduler,Email"
+  - title: "RunTracker"
+    description: "Running training plan tracker with AI-powered Apple Fitness screenshot parsing. Create multi-week plans, log workouts, and monitor progress with pace and distance stats."
+    url: null
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 8v8"/><path d="M5 20l3.5-3.5"/><path d="M19 20l-3.5-3.5"/><path d="M8 16.5L12 16l4 .5"/></svg>'
+    icon_bg_color: "rgba(20, 184, 166, 0.12)"
+    icon_text_color: "var(--accent-teal)"
+    tags: "Flask,Claude API,PWA,Flask-Login"
+  - title: "RAGBot"
+    description: "Retrieval-augmented generation chatbot that ingests internal documentation and provides intelligent answers using semantic search with OpenAI embeddings and GPT-4o."
+    url: null
+    icon_svg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>'
+    icon_bg_color: "rgba(6, 182, 212, 0.12)"
+    icon_text_color: "#06b6d4"
+    tags: "Flask,OpenAI,pgvector,RAG"
