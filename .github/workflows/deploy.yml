@@ -14,4 +14,8 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-          script: cd /var/www/derekgillett && git pull
+          script: |
+            cd /var/www/derekgillett
+            git pull
+            venv/bin/pip install -q -r requirements.txt
+            sudo systemctl restart derekgillett
